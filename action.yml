@@ -1,0 +1,5 @@
+name: "sodgeIT Action"
+description: "Basic Action for internal training purposes"
+runs:
+  using: "docker"
+  image: "Dockerfile"
