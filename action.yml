@@ -1,5 +1,11 @@
-name: "sodgeIT Action"
-description: "Basic Action for internal training purposes"
+inputs:
+  file-name:
+    description: 'The file being searched for'
+    required: false
+    default: 'README.md'
+
 runs:
-  using: "docker"
-  image: "Dockerfile"
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.file-name }}
