@@ -6,5 +6,5 @@ ENV FILE_NAME=${FILE_NAME}
 
 RUN pip install click
 
-ENTRYPOINT ["python3", "/main.py"]
-CMD ["README.md"]
+ENTRYPOINT ["python3", "main.py"]
+CMD ["README"]

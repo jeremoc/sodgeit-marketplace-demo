@@ -8,6 +8,7 @@ class FileChecker:
     def _file_exists_in_project(self, filename: str, start_path: str ="./") -> bool:
         for dirpath, dirnames, filenames in os.walk(start_path):
             for file in filenames:
+                print(file)
                 if file == filename:
                     return True
         return False
